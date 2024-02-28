@@ -1,19 +1,15 @@
 /* Стилизация контейнера Swiper */
 .swiper-container {
   position: relative;
-  /* Для позиционирования кнопок навигации относительно контейнера */
   width: 100%;
-  /* Ширина контейнера */
-  height: 100px;
-  /* Высота контейнера, сделаем его маленьким */
+  height: 70px;
   margin-bottom: 20px;
-  /* Отступ снизу, чтобы было пространство до блока с колбами */
 }
 
 /* Стилизация слайдов */
 .swiper-slide {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 16px;
   /* Меньший размер текста для маленького слайдера */
@@ -36,14 +32,15 @@
   /* Ширина */
   height: 36px;
   /* Высота */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
+  align-items: center; */
+  /* position: absolute; */
   /* Абсолютное позиционирование */
-  top: 50%;
+  /* top: 50%; */
   /* Центрирование по вертикали */
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
+  /* transform: translateX(50%); */
   /* Смещение для точного центрирования */
   z-index: 10;
   /* Убедитесь, что кнопки находятся над слайдами */
