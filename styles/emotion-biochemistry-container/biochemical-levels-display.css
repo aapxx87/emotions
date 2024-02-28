@@ -1,4 +1,32 @@
 .biochemical-levels-display {
-  width: 100%;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  /* Равномерно распределяет элементы с учетом доступного пространства вокруг них */
+  align-items: center;
+  height: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.biochemical-level {
+  display: flex;
+  flex-direction: column;
+  /* Ориентирует содержимое колонкой (вертикально) */
+  justify-content: center;
+  /* Выравнивание содержимого по центру по вертикали */
+  align-items: center;
+  /* Выравнивание содержимого по центру по горизонтали */
+  height: 400px;
+  /* Высота каждого элемента */
+  flex-basis: 20%;
+  /* Базовая ширина каждого элемента, например 20% от общей ширины контейнера */
+  flex-grow: 0;
+  /* Предотвращает растягивание элементов сверх их базовой ширины */
+  margin: 0 10px;
+  /* Отступы между элементами */
+  border: 1px solid grey;
+  /* Отображение границы каждого элемента */
+  box-sizing: border-box;
+  /* Включает в ширину и высоту элемента паддинги и бордюры */
 }
