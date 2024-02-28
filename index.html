@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Ссылка на CSS Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/main.css">
   <link rel="manifest" href="manifest.json">
   <title>Emotions & chemistry map v.1.0.</title>
@@ -18,15 +20,18 @@
 
     <div class="emotion-biochemistry-container">
 
-      <div class="external-events-slaider slider-container">
-        <div class="slider" id="slider">
-          <div class="slide">Слайд 1</div>
-          <div class="slide">Слайд 2</div>
-          <div class="slide">Слайд 3</div>
-          <div class="slide">Слайд 4</div>
-          <div class="slide">Слайд 5</div>
-          <!-- Добавьте столько слайдов, сколько нужно -->
+      <div class="external-events-slaider swiper-container">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Слайд 1</div>
+          <div class="swiper-slide">Слайд 2</div>
+          <div class="swiper-slide">Слайд 3</div>
+          <!-- Дополнительные слайды -->
         </div>
+        <!-- Если нужны стрелки навигации -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
       </div>
 
       <div class="biochemical-levels-display"></div>
@@ -40,6 +45,9 @@
 
   <script src="scripts/app_data.js"></script>
   <script src="scripts/main.js"></script>
+
+  <!-- Ссылка на JS Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="scripts/slider.js"></script>
 
 

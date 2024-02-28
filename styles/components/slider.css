@@ -1,20 +1,67 @@
-.slider-container {
-  overflow: hidden;
+/* Стилизация контейнера Swiper */
+.swiper-container {
+  position: relative;
+  /* Для позиционирования кнопок навигации относительно контейнера */
   width: 100%;
-  max-width: 600px;
-  /* Можете изменить на нужную ширину */
+  /* Ширина контейнера */
+  height: 100px;
+  /* Высота контейнера, сделаем его маленьким */
+  margin-bottom: 20px;
+  /* Отступ снизу, чтобы было пространство до блока с колбами */
 }
 
-.slider {
+/* Стилизация слайдов */
+.swiper-slide {
   display: flex;
-  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  /* Меньший размер текста для маленького слайдера */
   color: #fff;
+  /* Цвет текста */
+  background-color: #007bff;
+  /* Цвет фона слайда */
 }
 
-.slide {
-  min-width: 100%;
-  /* Дополнительные стили для слайдов */
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
+/* Стилизация кнопок навигации */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  /* Цвет иконок */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Фон кнопок для лучшей видимости */
+  border-radius: 50%;
+  /* Круглые кнопки */
+  width: 36px;
+  /* Ширина */
+  height: 36px;
+  /* Высота */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  /* Центрирование по вертикали */
+  transform: translateY(-50%);
+  /* Смещение для точного центрирования */
+  z-index: 10;
+  /* Убедитесь, что кнопки находятся над слайдами */
+}
+
+.swiper-button-prev {
+  left: 0;
+  /* Кнопка назад слева */
+}
+
+.swiper-button-next {
+  right: 0;
+  /* Кнопка вперед справа */
+}
+
+/* Улучшение видимости иконок кнопок */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  /* Увеличение размера иконок */
 }
