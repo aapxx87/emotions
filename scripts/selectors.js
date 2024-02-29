@@ -1,4 +1,5 @@
 // CONTAINERS
+const description_container = document.querySelector('.description-container')
 
 
 // SLIDERS

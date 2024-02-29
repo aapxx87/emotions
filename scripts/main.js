@@ -40,6 +40,8 @@ const display_nerochemical_boxes_emotional_states = function (emotional_state) {
 
         document.querySelector('.choosed_option--name').textContent = emotional_state
 
+        description_container.textContent = ''
+
       }
 
     }
@@ -62,9 +64,10 @@ const display_nerochemical_boxes_external_events = function (external_event_name
 
 
     if (event_obj[1].description === external_event_name) {
-      // console.log(event_obj[1].biochemistryChanges);
+      // console.log(event_obj[1].detailedDescription);
 
       for (const chemical_elements of Object.entries(event_obj[1].biochemistryChanges)) {
+
         // console.log(chemical_elements);
 
         const chemical_box_element = document.createElement('div')
@@ -87,6 +90,11 @@ const display_nerochemical_boxes_external_events = function (external_event_name
 
         document.querySelector('.biochemical-levels-display').append(chemical_box_element)
         document.querySelector('.choosed_option--name').textContent = external_event_name
+
+
+        description_container.textContent = event_obj[1].detailedDescription
+
+
 
       }
 
