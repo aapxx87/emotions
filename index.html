@@ -27,14 +27,15 @@
 
         <div class="swiper-button-prev swiper-button-prev-first"></div>
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Receiving Praise</div>
+        <div class="swiper-wrapper swiper-wrapper-first">
+          <!-- <div class="swiper-slide">Choose an External Event</div> -->
+          <!-- <div class="swiper-slide">Receiving Praise</div>
           <div class="swiper-slide">Facing Criticism</div>
           <div class="swiper-slide">Reading Positive News</div>
           <div class="swiper-slide">Reading Negative News</div>
           <div class="swiper-slide">Feeling Hunger</div>
           <div class="swiper-slide">Feeling Satiety</div>
-          <div class="swiper-slide">Lack of Sleep</div>
+          <div class="swiper-slide">Lack of Sleep</div> -->
         </div>
 
         <div class="swiper-button-next swiper-button-next-first"></div>
@@ -47,10 +48,15 @@
 
       <!-- ! biochemical-levels-display  -->
 
+      <div class="choosed_option">
+        <p class="choosed_option--name"></p>
+      </div>
+
       <div class="biochemical-levels-display">
 
-        <div class="biochemical-level" data-name="Dopamine">Dopamine</div>
-        <div class="biochemical-level" data-name="Serotonin">Serotonin</div>
+
+        <!-- <div class="biochemical-level" data-name="Dopamine">Dopamine</div>
+        <div class="biochemical-level" data-name="Serotonin">Serotonin</div> -->
         <!-- <div class="biochemical-level" data-name="cortisol">cortisol</div> -->
         <!-- <div class="biochemical-level" data-name="cortisol">cortisol</div> -->
 
@@ -68,12 +74,14 @@
 
           <div class="swiper-button-next swiper-button-next-second"></div>
 
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">love</div>
+          <div class="swiper-wrapper swiper-wrapper-second">
+            <!-- <div class="swiper-slide">Choose a State</div> -->
+
+            <!-- <div class="swiper-slide">love</div>
             <div class="swiper-slide">happiness</div>
             <div class="swiper-slide">anger</div>
             <div class="swiper-slide">depression</div>
-            <div class="swiper-slide">anxiety</div>
+            <div class="swiper-slide">anxiety</div> -->
           </div>
 
           <div class="swiper-button-prev swiper-button-prev-second"></div>
@@ -81,17 +89,26 @@
         </div>
       </div>
 
+
+
+
+
+      <!-- ! DESCRIPTION block -->
+
     </div>
 
   </div>
 
 
   <script src="scripts/app_data.js"></script>
+  <script src="scripts/selectors.js"></script>
+
   <script src="scripts/main.js"></script>
 
   <!-- Ссылка на JS Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="scripts/slider.js"></script>
+  <script src="scripts/slider/slider_content_filling.js"></script>
+  <script src="scripts/slider/slider_inizialisation.js"></script>
 
 
   <script>

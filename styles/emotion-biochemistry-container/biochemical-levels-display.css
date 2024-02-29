@@ -10,6 +10,12 @@
 }
 
 .biochemical-level {
+  --filling-height: 50%;
+  /* Начальное значение для высоты наполнения */
+  --filling-color: blue;
+  /* Начальное значение для цвета наполнения */
+  position: relative;
+
   display: flex;
   flex-direction: column;
   /* Ориентирует содержимое колонкой (вертикально) */
@@ -29,4 +35,29 @@
   /* Отображение границы каждого элемента */
   box-sizing: border-box;
   /* Включает в ширину и высоту элемента паддинги и бордюры */
+  color: transparent;
+  /* z-index: 10; */
+  background-color: antiquewhite;
+}
+
+.biochemical-level::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--filling-height);
+  /* Использование переменной для высоты */
+  background-color: var(--filling-color);
+  /* Использование переменной для цвета */
+  z-index: 1;
+}
+
+.chemical-name {
+  position: relative;
+  /* Позиционируем поверх псевдоэлемента */
+  z-index: 2;
+  /* Убедитесь, что z-index выше, чем у ::before */
+  color: #414141;
+  /* Цвет текста, можно настроить по желанию */
 }

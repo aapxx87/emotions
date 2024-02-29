@@ -10,7 +10,7 @@ const emotion_neurochemical_map = {
     oxytocin: 40,
   },
   anger: {
-    noradrenaline: 80,
+    adrenaline: 80,
     cortisol: 70,
   },
   depression: {
@@ -43,7 +43,7 @@ const emotion_neurochemical_map = {
   },
   curiosity: {
     dopamine: 60,
-    noradrenaline: 50,
+    adrenaline: 50,
   },
   fear: {
     cortisol: 80,
@@ -51,7 +51,7 @@ const emotion_neurochemical_map = {
   },
   motivation: {
     dopamine: 60,
-    noradrenaline: 50,
+    adrenaline: 50,
   },
   irritation: {
     adrenaline: 70,

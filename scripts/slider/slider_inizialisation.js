@@ -1,4 +1,5 @@
-// Инициализация первого слайдера
+// ? Инициализация первого слайдера
+
 const swiperFirst = new Swiper('.swiper-container-first', {
   // Указываем горизонтальное направление прокрутки слайдов
   direction: 'horizontal',
@@ -18,10 +19,22 @@ const swiperFirst = new Swiper('.swiper-container-first', {
   touchAngle: 45, // Угол, в пределах которого должен начаться свайп
   grabCursor: true, // Изменение курсора на "захват" при наведении на слайдер
   slideToClickedSlide: true, // Переключение на слайд при клике по нему
-  // Можно добавить дополнительные настройки по мере необходимости
+  // Добавление обработчика событий
+  on: {
+    slideChange: function () {
+      const currentSlideText = this.slides[this.realIndex].textContent.trim();
+
+      display_nerochemical_boxes_external_events(currentSlideText)
+
+    }
+  }
+
 });
 
-// Инициализация второго слайдера
+
+
+// ? Инициализация второго слайдера
+
 const swiperSecond = new Swiper('.swiper-container-second', {
   // Параметры аналогичны первому слайдеру, но могут быть настроены индивидуально
   direction: 'horizontal',
@@ -36,4 +49,10 @@ const swiperSecond = new Swiper('.swiper-container-second', {
   touchAngle: 45,
   grabCursor: true,
   slideToClickedSlide: true,
+  on: {
+    slideChange: function () {
+      const currentSlideText = this.slides[this.realIndex].textContent.trim();
+      display_nerochemical_boxes_emotional_states(currentSlideText)
+    }
+  }
 });

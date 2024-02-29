@@ -28,3 +28,12 @@ body {
   max-width: 430px;
   height: 100vh;
 }
+
+.choosed_option {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d2d2d2;
+}
